@@ -1,0 +1,41 @@
+[project]
+name = "conversational-qa-chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "vicky", email = "vigneshv1812@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "bs4>=0.0.2",
+    "fastapi>=0.141.1",
+    "ipykernel>=7.3.0",
+    "langchain>=1.4.0",
+    "langchain-chroma>=1.1.0",
+    "langchain-community>=0.4.2",
+    "langchain-huggingface>=1.2.2",
+    "langchain-mcp-adapters>=0.3.2",
+    "langchain-ollama>=1.1.0",
+    "langchain-tavily>=0.2.18",
+    "langserve>=0.3.3",
+    "matplotlib>=3.11.1",
+    "nltk>=3.10.3",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "pypdf>=6.17.0",
+    "scikeras>=0.13.0",
+    "scikit-learn>=1.9.0",
+    "sse-starlette>=3.4.10",
+    "streamlit>=1.63.0",
+    "tensorboard>=2.21.0",
+    "tensorflow>=2.21.0",
+    "uvicorn>=0.52.4",
+]
+
+[project.scripts]
+conversational-qa-chatbot = "conversational_qa_chatbot:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
